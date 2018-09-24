@@ -14,7 +14,7 @@ use std::ops::{Mul, Rem, Sub};
 
 use super::{PrivateKey, PublicKey};
 use constants::{ELGAMAL_PM1, ELGAMAL_PM2, ELGAMAL_G, ELGAMAL_P};
-use math::rectify;
+use utils::rectify;
 
 fn gen_gamma_k() -> (BigUint, BigUint) {
     let mut rng = OsRng::new().expect("should be able to construct RNG");

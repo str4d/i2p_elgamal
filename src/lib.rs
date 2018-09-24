@@ -18,7 +18,7 @@ use std::fmt;
 
 mod constants;
 mod elgamal;
-mod math;
+mod utils;
 
 pub use elgamal::{Decryptor, Encryptor, KeyPairGenerator};
 
