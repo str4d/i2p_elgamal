@@ -2,6 +2,7 @@
 name = "i2p_elgamal"
 description = "Implementation of I2P's 2048-bit ElGamal primitive"
 version = "0.0.0"
+license = "MIT/Apache-2.0"
 authors = ["Jack Grigg <str4d@i2pmail.org>"]
 homepage = "https://github.com/str4d/i2p_elgamal"
 repository = "https://github.com/str4d/i2p_elgamal"
