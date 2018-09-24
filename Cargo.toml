@@ -1,7 +1,7 @@
 [package]
 name = "i2p_elgamal"
 description = "Implementation of I2P's 2048-bit ElGamal primitive"
-version = "0.0.0"
+version = "0.1.0"
 license = "MIT/Apache-2.0"
 authors = ["Jack Grigg <str4d@i2pmail.org>"]
 homepage = "https://github.com/str4d/i2p_elgamal"
@@ -11,3 +11,11 @@ categories = ["cryptography"]
 keywords = ["i2p", "elgamal"]
 
 [dependencies]
+lazy_static = "1.1"
+num-bigint = { version = "0.2", features = ["rand"] }
+num-traits = "0.2"
+rand = "0.5"
+sha2 = "0.7"
+
+[dev-dependencies]
+data-encoding = "2.1"
