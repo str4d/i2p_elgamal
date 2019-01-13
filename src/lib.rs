@@ -22,6 +22,13 @@ mod utils;
 
 pub use elgamal::{Decryptor, Encryptor, KeyPairGenerator};
 
+/// ElGamal errors
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+pub enum Error {
+    InvalidCiphertext,
+    InvalidMessage,
+}
+
 /// The public component of an ElGamal encryption keypair. Represents only the
 /// exponent, not the primes (which are constants).
 pub struct PublicKey(pub [u8; 256]);
